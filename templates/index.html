@@ -1,27 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>{{Title}}</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/estilo.css')}}">
-</head>
-<body>
-  <nav>
-      <a href="/index">Página Inicial</a>
-      <a href="/produtos">Produtos</a>
-      <a href="/compra">Comprar</a>
-      <a href="/cadastro">Cadastro</a>
-      <a href="/login">Login</a>
-      <a href="/historia">Sobre a ...</a>
+{% extends 'base.html' %}
+{% block conteudo %}
 
-  </nav>
+    <h2 id="BV"> Seja Bem Vindo a Nossa Sorveteria!!! </h2>
 
-  <h1>Bem-Vindo! {{nome}}</h1>
+    <p id="T1" >
+       Caso já não faça, venha fazer parte da nossa cremosa família refrescante!
+    </p>
 
-  {% block conteudo %}
-  {% endblock %}
-
-
-  <footer>Desenvolvido por {{nome}}</footer>
-</body>
-</html>
+    <p id="txtCAD"> <i> Clique <a href="formulario">AQUI</a> e faça o seu cadastro agora!</i> </p>
+{% endblock %}
